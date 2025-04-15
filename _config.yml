@@ -1,7 +1,8 @@
 title: InsideOut Blog
 description: A personal blog exploring thoughts, ideas, and everything in between.
-baseurl: ""
-url: ""
+url: "https://bita-c.github.io"
+baseurl: "/insideout-blog"
+
 #theme: minima
 remote_theme: null
 
@@ -11,3 +12,4 @@ plugins:
 
 sass:
   quiet_deps: true
+
