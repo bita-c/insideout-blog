@@ -1,0 +1,106 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/* === Calming Color Scheme === */
+body {
+  font-family: 'Lora', serif !important;
+  background-color: #f9f6f0;
+  color: #2f2f2f;
+  font-family: 'Lora', serif;
+}
+
+a {
+  color: #5e81ac;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4c6781;
+  text-decoration: underline;
+}
+
+header, footer {
+  background-color: #ede5d6;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #5e81ac;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #4c6781;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.site-logo {
+  height: 100px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.hero {
+  text-align: center;
+  background-color: #ede5d6;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Layout Spacing Enhancements === */
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-content {
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+header, footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body {
+  line-height: 1.75;
+}
+
+

@@ -1,0 +1,13 @@
+title: InsideOut Blog
+description: A personal blog exploring thoughts, ideas, and everything in between.
+baseurl: ""
+url: ""
+#theme: minima
+remote_theme: null
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+sass:
+  quiet_deps: true
