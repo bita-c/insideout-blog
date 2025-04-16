@@ -13,3 +13,10 @@ plugins:
 sass:
   quiet_deps: true
 
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/

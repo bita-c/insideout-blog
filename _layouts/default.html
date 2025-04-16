@@ -9,7 +9,34 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        <main class="site-main">
+          <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+          <label for="sidebar-toggle" class="sidebar-toggle-label">☰</label>
+
+          <aside class="site-sidebar">
+            <div class="sidebar-inner">
+<!--              <h2>About Me</h2>-->
+<!--              <p>Exploring life from the inside out 🌿</p>-->
+
+              <h2>Recent Posts</h2>
+              <ul>
+                {% for post in site.posts limit: 3 %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+
+              <h2>Tags</h2>
+              <p><a href="#">Growth</a>, <a href="#">Dreams</a>, <a href="#">Reflection</a></p>
+            </div>
+          </aside>
+
+          <div class="content-wrapper">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+          </div>
+        </main>
+
       </div>
     </main>
 

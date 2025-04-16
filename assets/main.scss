@@ -12,6 +12,13 @@ body {
   font-family: 'Lora', serif;
 }
 
+.site-title,
+.page-link,
+.sidebar-inner,
+.wrapper {
+  font-family: 'Lora', serif !important;
+}
+
 a {
   color: #5e81ac;
   text-decoration: none;
@@ -45,12 +52,6 @@ nav a:hover {
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.site-logo {
-  height: 100px;
-  width: auto;
-  opacity: 0.85;
 }
 
 .hero {
@@ -101,6 +102,99 @@ header, footer {
 
 body {
   line-height: 1.75;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-logo {
+  height: 100px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar-right .page-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5e81ac;
+}
+
+.navbar-right .page-link:hover {
+  color: #4c6781;
+}
+.page-link.active {
+  border-bottom: 2px solid #5e81ac;
+  color: #2f2f2f;
+}
+
+.site-main {
+  display: flex;
+}
+
+.site-sidebar {
+  width: 250px;
+  background-color: #ede5d6;
+  padding: 2rem 1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-inner {
+  position: sticky;
+  top: 2rem;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar-toggle-label {
+  display: none;
+  font-size: 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* Sidebar typography adjustments */
+.site-sidebar {
+  font-size: 0.95rem; /* Slightly smaller than base */
+  line-height: 1.6;
+  color: #2f2f2f;
+}
+
+.site-sidebar h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.site-sidebar p,
+.site-sidebar ul {
+  font-size: 0.95rem;
 }
 
 
