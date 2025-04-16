@@ -3,7 +3,7 @@
   <div class="wrapper logo-header">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <img src="/assets/images/logo.png" alt="InsideOut Logo" class="site-logo">
+    <img src="{{ site.baseurl }}/assets/images/logo.png" alt="InsideOut Logo" class="site-logo">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
